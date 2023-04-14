@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="Assing.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="DUNE.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+   
+</head>
+<body>
+  <ul class="socials" id="socialid" >
+    <a href="instagram.com"><li class="social"  ><img src="insta.png"  alt=""></li></a>
+    &nbsp;    &nbsp;
+    <a href="whatsapp.com"><li class="social" ><img src="whatsapp.png" alt=""></li></a>
+    &nbsp;    &nbsp;
+    <a href="youtube.com"><li class="social" ><img src="youtube.png" alt=""></li></a>
+    &nbsp;    &nbsp;
+   <a href="twitter.com"><li class="social" ><img src="twitter1.png" alt=""></li></a>
+  </ul>
+  <div class="heading_link" >
+    <div class="logo-img" >
+        <img src="img\Logo.png" alt="">
+       
+        <div class="links" >
+          <a class="linking" href="index.html">HOME</a>   &nbsp;    &nbsp;
+          <a class="linking" href="DUNE.html">REVIEW</a>   &nbsp;    &nbsp;
+          <a  class="linking" href="Login.html">LOGIN</a>    &nbsp; &nbsp; 
+          <a class="linking" href="about.html">ABOUT</a> &nbsp; &nbsp;
+         
+
+        </div>
+    </div>
+  </div>
+    
+
+
+    <div class="slider" >
+    
+        <div class="left-content" >
+            <style type="text/css">
+                html, body{
+                background-color: grey;
+              }
+              .wrapper{
+                /* width:70%; */
+                height: 600px;
+                padding-top: 20px;
+                text-align:center;
+              }
+
+              h2{
+                font-family:sans-serif;
+                color:black;
+              }
+              .carousel{
+                width:90%;  
+                margin:0px auto;
+              }
+
+              .car img{
+                  width: 350px;
+                  height: 600px;
+              }
+              
+              .slick-slide img{
+                width:100%;
+                border: 2px solid #fff;
+              }
+            </style>
+        <div class="wrapper">
+           
+                <div class="carousel">
+                  <div class="car"><img src="img\scorsese.png"></div>
+                  <div class="car"><img src="img\QT.png"></div>
+                  <div class="car"><img src="img\Nolan.png"></div>
+                  <div class="car"><img src="img\Inarritu.png"></div>
+                  <div class="car"><img src="img\Davidfincher.png"></div>
+                </div>
+          </div>
+          
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+          <script type="text/javascript">
+          
+          
+              $('.carousel').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                responsive: [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '40px',
+                      slidesToShow: 3
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '40px',
+                      slidesToShow: 3
+                    }
+                  }
+                ]
+              });
+          </script>
+
+
+
+        </div>
+
+    <div class="form" >
+    <form action="#page-2" >
+        <br>
+        <h2 class="search" >Search Here</h2>
+   
+        <br>
+        <h2 id="labs" class="labs" for="genre">Genre:</h2>
+        
+     
+        <select class="inp" id="genre">
+            <option value="genre">select genre</option>
+            <option value="sci-fi">Sci-fi</option>
+            <option value="Drama">Drama</option>
+            <option value="Documentry">Documentry</option>
+            <option value="thriller">Thriller</option>
+            <option value="actio">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="western">Western</option>
+        </select>
+
+
+       <br>
+        <br>
+        <h2 id="labs" class="labs" for="genre">Imdb:</h2>
+      
+       
+        <input class="inp" type="range" id="slide" placeholder="enter rating" min="1" max="10" value="10" onchange="fetch()" >
+        <input class="inps" type="text" id="put" >
+        <script>
+            function fetch()
+            {
+                var get = document.getElementById("slide").value;
+                document.getElementById("put").value=get;
+            }
+        </script>
+
+
+
+        
+        <br>
+        <h2 id="labs" class="labs" for="Category">Category:</h2>
+     
+        <select class="inp" aria-placeholder="select category" id="Category">
+            <option value="Category">Select Category</option>
+            <option value="Art">Art</option>
+            <option value="Commercial">Commercial</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        
+        <button onclick="" class="but" >Search</button>
+    </form>
+    </div>
+    
+    </div>
+    
+   
+<!-------------------------------scroll------------------------------------- -->
+
+    <div class="scroll" id="scroll" >
+        <a href="#page-2">  <img src="scroll.gif" alt=""></a>
+    </div>
+
+  
+   
+
+    <div id="page-2" >
+        <h2 class="review" >Our Latest Reviews</h2>
+    <div class="latest-column">
+        
+         <div class="latest-holder" >
+             <div class="latest-image" >
+              <a href="DUNE.html#TENET-2"><img src="TENET.jpg" alt="">
+              <div class="latest-description" ></a>
+                <img  src="imdb.png" alt="">&nbsp;&nbsp;&nbsp;<span class="spanning" >:7.1/10</span>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="spanning" >year: 2020</span> 
+                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     <span class="spanning" > 2hr30m</span>
+                     <br>
+                   
+                
+            </div>
+             </div>
+            
+             <div class="latest-overlay" >
+                 Latest
+             </div>
+             
+         </div>
+
+         <div class="latest-holder" >
+            <div class="latest-image" >
+                <a href="DUNE.html#FREEGUY-2"><img src="free-guy.png" alt="">
+                <div class="latest-description" ></a>
+                    <img  src="imdb.png" alt="">&nbsp;&nbsp;&nbsp;<span class="spanning" >:7.1/10</span>
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     <span class="spanning" >year: 2020</span> 
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      <span class="spanning" > 1hr55m</span>
+                </div>
+            </div>
+            <div class="latest-overlay" >
+                Latest
+            </div>
+            
+        </div>
+        <div class="latest-holder" >
+            <div class="latest-image" >
+              <a href="DUNE.html#DUNE-2">   <img src="dune2.jpg" alt="">
+                <div class="latest-description" >
+                </a>
+                  
+                    <img  src="imdb.png" alt="">&nbsp;&nbsp;&nbsp;<span class="spanning" >:8/10</span>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <span class="spanning" >year: 2021</span> 
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         <span class="spanning" > 2hr35m</span>
+                         
+                </div>
+            </div>
+            <div class="latest-overlay" >
+                Latest  
+            </div>
+        </div>
+ 
+    </div>
+    
+  
+
+  </body>
+
+<footer class="footers" >   
+  <div class="footer_content" >  
+    contact us:
+    <ul class="socials" id="socialid" >
+      <a href="instagram.com"><li class="social"  ><img src="insta.png"  alt=""></li></a>
+      &nbsp;    &nbsp;
+      <a href="whatsapp.com"><li class="social" ><img src="whatsapp.png" alt=""></li></a>
+      &nbsp;    &nbsp;
+      <a href="youtube.com"><li class="social" ><img src="youtube.png" alt=""></li></a>
+      &nbsp;    &nbsp;
+     <a href="twitter.com"><li class="social" ><img src="twitter1.png" alt=""></li></a>
+    </ul>
+    
+
+    <h3 class="copyright" > &nbsp; &nbsp; &#169; copyright
+    <script>
+    var dates = new Date();
+    document.write(dates.getFullYear()); 
+    </script>  
+    </h3></div>
+</footer>
+
+</html>

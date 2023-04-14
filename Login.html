@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Assing.css">
+    <style>
+        *{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+
+    <ul class="socials" id="socialid" >
+        <a href="instagram.com"><li class="social"  ><img src="insta.png"  alt=""></li></a>
+        &nbsp;    &nbsp;
+        <a href="whatsapp.com"><li class="social" ><img src="whatsapp.png" alt=""></li></a>
+        &nbsp;    &nbsp;
+        <a href="youtube.com"><li class="social" ><img src="youtube.png" alt=""></li></a>
+        &nbsp;    &nbsp;
+       <a href="twitter.com"><li class="social" ><img src="twitter1.png" alt=""></li></a>
+      </ul>
+      <div class="heading_link" >
+      
+           
+            <div class="links" >
+              <a class="linking" href="index.html">HOME</a>   &nbsp;    &nbsp;
+              <a class="linking" href="DUNE.html">REVIEW</a>   &nbsp;    &nbsp;
+              <a  class="linking" href="Login.html">LOGIN</a>    &nbsp; &nbsp; 
+              <a class="linking" href="about.html">ABOUT</a> &nbsp; &nbsp;
+         
+        </div>
+        <br>
+      </div>
+
+    <h1 id="login_text" >Login Here</h1>
+
+
+    <br><br>
+    <div class="form2" >
+        <br>
+            <div class="log_txt" >Signup Here</div>
+            <form id="forme">
+            <div class="form1">
+            
+            <br><br>
+            <input required id="b" type="text" placeholder="username" >
+            <br><br>
+    
+            <input required id="b" type="text" placeholder="E-mail id">
+            <br> <br>
+            <input required id="b"  type="password" placeholder="password">
+            <br> <br>
+             <input hidden required type="text" >
+            <button id="c"  type="reset"   class="but" onclick="openpopup()"  >submit</button>
+           </div>
+        </form>
+    
+    
+    </div>
+    <br>
+    
+    <div class="menu">
+    <div class="ending">
+    
+        <!-- <button type="submit" class="but" onclick="openpopup()">submit</button> -->
+        
+    
+        <div class="popup" id="popup" > 
+            <img src="grey_tick.jpg " alt="">
+            
+            <h2>Thank You!</h2>
+            <br> &nbsp;
+            <p>Your details have been<br>submitted successfully  Thanks! 
+            </p>
+        
+            <button type="button" onclick="closepopup()" >OK</button>
+            
+           
+    
+            <script>  
+    
+                let popup = document.getElementById("popup");
+        
+                 function openpopup()
+                 {
+                     popup.classList.add("open-popup");
+                 }
+        
+                 function closepopup()
+                 {
+                     popup.classList.remove("open-popup");
+                 }
+    
+    
+                // var invalids =document.getElementById("b");
+    
+                // if(invalids =null)
+                // {
+                //     function invalidpopup()
+                //  {
+                //     alert("Please provide all the details");
+                //  }
+                // }    
+    
+    
+                // document.addEventListener("mousemove", myFunction);
+    
+                //     function myFunction() {
+                //     document.getElementById("demo").innerHTML = Math.random();
+      
+                //     }
+    
+    
+            </script>
+                
+         
+            </div>
+    
+        </div>
+        </div>
+             <!--END OF  POP UP- HTML WITH SCRIPT -->
+             <p id="demo"></p>
+
+            
+            
+    
+             
+           
+                
+             
+</body>
+
+<footer class="footers" >
+    <div class="footer_separate" >
+    <div class="footer_content_login" > 
+        
+        contact us:
+        <ul class="socials" id="socialid" >
+          <a href="instagram.com"><li class="social"  ><img src="insta.png"  alt=""></li></a>
+          &nbsp;    &nbsp;
+          <a href="whatsapp.com"><li class="social" ><img src="whatsapp.png" alt=""></li></a>
+          &nbsp;    &nbsp;
+          <a href="youtube.com"><li class="social" ><img src="youtube.png" alt=""></li></a>
+          &nbsp;    &nbsp;
+         <a href="twitter.com"><li class="social" ><img src="twitter1.png" alt=""></li></a>
+        </ul>
+      
+        <h3 class="copyright" >  &nbsp; &nbsp; &#169; copyright
+        <script>
+        var dates = new Date();
+        document.write(dates.getFullYear()); 
+        </script>  
+        </h3>
+    </div>
+        <div>
+  
+</footer>     
+ 
+
+</html>
+ 
